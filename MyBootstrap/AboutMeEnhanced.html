@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ABOUT ME</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="background-change" id=MorningBG type="button" >Morning</a>
+          </li>
+          <li class="nav-item">
+            <a class="background-change" id=NoonBG type="button">Afternoon</a>
+          </li>
+          <li class="nav-item">
+            <a class="background-change" id=EveningBG type="button">Evening</a>
+          </li>
+          <li class="nav-item">
+            <a class="background-change" id=NightBG type="button">Night</a>
+          </li>
+              <li class="nav-item">
+            <a class="background-change" id=MidnightBG type="button">Midnight</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>About Me</h1>
+            <span class="subheading"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="MyExperience.html">
+            <h2 class="post-title">
+              My Experience with Web Design and Development
+            </h2>
+        <hr>
+        <div class="post-preview">
+          <a href="HopeToLearn.html">
+            <h2 class="post-title">
+              What I hope to learn from this class.
+            </h2>
+        <hr>
+        <div class="post-preview">
+          <a href="Future.html">
+            <h2 class="post-title">
+             What I would like to do with my new web design and development knowledge in the future
+        <!-- Pager -->
+        <div class="clearfix">
+        </div>
+  <hr>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+  <!-- Scripts for buttons and other stuffs -->
+                
+<script>
+
+//Timed theme
+    
+$(document).ready(function() {
+    var d = new Date();
+    var n = d.getHours();
+{
+// Night
+      if (n >= 20 && n <= 22 || n <= 6 && n >= 1) 
+     $('.masthead').css("background-image", "url('https://images8.alphacoders.com/599/thumb-1920-599909.jpg')");
+    
+//Midnight "PEACE AND TRANQUILLTY BY HAT KID" easter egg (Not much of an easter egg anymore.)
+        else if (n >= 23 || n <= 1) 
+        $('.masthead').css("background-image", "url('https://thumbs.gfycat.com/SlushyDefiniteBasil-max-1mb.gif')");
+// Evening/sunset
+      else if (n >= 18 && n <= 20)
+ $('.masthead').css("background-image", "url('https://i.ibb.co/tLnWGCM/sunset-dragon-by-rose-of-lynn-d32ix3r-fullview.jpg')");
+// Afternoon
+      else if (n >= 12  && n <= 17)
+     $('.masthead').css("background-image", "url('https://img5.goodfon.com/wallpaper/nbig/a/1e/brian-valeza-afternoon-snack-dragon-hunting-wyverns-vymyshle.jpg')");
+// Morning
+      else
+       $('.masthead').css("background-image", "url('https://i.ibb.co/5FVHfdc/good-morning-hai-ro-by-lailie-dragon-lovard-dag77h3-fullview.jpg')");
+
+
+//Theme buttons           
+$("#MorningBG").click(function(){ 
+ $('.masthead').css("background-image", "url('https://i.ibb.co/5FVHfdc/good-morning-hai-ro-by-lailie-dragon-lovard-dag77h3-fullview.jpg')");
+                    
+});
+$("#NoonBG").click(function(){ 
+ $('.masthead').css("background-image", "url('https://img5.goodfon.com/wallpaper/nbig/a/1e/brian-valeza-afternoon-snack-dragon-hunting-wyverns-vymyshle.jpg')");
+                    
+});
+    $("#EveningBG").click(function(){ 
+ $('.masthead').css("background-image", "url('https://i.ibb.co/tLnWGCM/sunset-dragon-by-rose-of-lynn-d32ix3r-fullview.jpg')");
+                    
+});
+    $("#NightBG").click(function(){ 
+ $('.masthead').css("background-image", "url('https://images8.alphacoders.com/599/thumb-1920-599909.jpg')");
+                    
+});
+    $("#MidnightBG").click(function(){ 
+ $('.masthead').css("background-image", "url('https://thumbs.gfycat.com/SlushyDefiniteBasil-max-1mb.gif')");
+                    
+});
+
+}
+});
+                
+</script>           
+                
+</body>
+
+</html>
